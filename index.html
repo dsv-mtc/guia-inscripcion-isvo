@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía del Trámite de Inscripción - ISVO</title>
+    <meta name="description" content="Portal Web para la inscripción en la Iniciativa de Seguridad Vial Organizacional (ISVO) del MTC.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logos-group">
+                <img src="image/mtc.jpg" alt="Ministerio de Transportes y Comunicaciones" id="logo-mtc" class="nav-logo">
+            </div>
+            <nav class="nav-links">
+                <button class="nav-tab active" data-tab="inicio"><i class="fa-solid fa-house"></i> Inicio</button>
+                <button class="nav-tab" data-tab="guia"><i class="fa-solid fa-route"></i> Guía del Trámite</button>
+                <button class="nav-tab" data-tab="simulador"><i class="fa-solid fa-laptop-code"></i> Simulador Solicitud</button>
+                <button class="nav-tab" data-tab="checklist"><i class="fa-solid fa-file-pen"></i> Simulador Formato Inscripción ISVO</button>
+                <button class="nav-tab" data-tab="recursos"><i class="fa-solid fa-folder-open"></i> Recursos</button>
+                <button class="nav-tab" data-tab="ayuda"><i class="fa-solid fa-circle-question"></i> Consultas</button>
+            </nav>
+            <div class="nav-actions">
+                <img src="image/onsv.png" alt="Observatorio Nacional de Seguridad Vial" id="logo-onsv" class="nav-logo">
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Bar -->
+    <nav class="mobile-nav">
+        <button class="mobile-tab active" data-tab="inicio"><i class="fa-solid fa-house"></i><span>Inicio</span></button>
+        <button class="mobile-tab" data-tab="guia"><i class="fa-solid fa-route"></i><span>Guía</span></button>
+        <button class="mobile-tab" data-tab="simulador"><i class="fa-solid fa-laptop-code"></i><span>Solicitud</span></button>
+        <button class="mobile-tab" data-tab="checklist"><i class="fa-solid fa-file-pen"></i><span>Formato ISVO</span></button>
+        <button class="mobile-tab" data-tab="recursos"><i class="fa-solid fa-folder-open"></i><span>Recursos</span></button>
+        <button class="mobile-tab" data-tab="ayuda"><i class="fa-solid fa-circle-question"></i><span>Ayuda</span></button>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="main-content">
+
+        <!-- TAB: INICIO -->
+        <section id="tab-inicio" class="tab-pane active">
+            <!-- Hero Carousel -->
+            <div class="hero-carousel" aria-label="Presentación de la iniciativa ISVO">
+                <div class="hero-slide active">
+                    <div class="hero">
+                <div class="hero-content">
+                    <span class="badge"><i class="fa-solid fa-shield-halved"></i> ISVO</span>
+                    <h1>Inscripción en la Iniciativa de Seguridad Vial Organizacional (ISVO)</h1>
+                    <p class="hero-subtitle">Portal Web para guiar a su organización en el proceso de inscripción ante la Dirección de Seguridad Vial del Ministerio de Transportes y Comunicaciones.</p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-lg" data-action="go-to-guia"><i class="fa-solid fa-circle-play"></i> Comenzar</button>
+                    </div>
+                </div>
+                <div class="hero-card-container">
+                    <div class="hero-interactive-card">
+                        <h3>¿Qué obtendrá al inscribirse?</h3>
+                        <div class="benefit-item">
+                            <div class="benefit-icon"><i class="fa-solid fa-award"></i></div>
+                            <div>
+                                <h4>Constancia Oficial</h4>
+                                <p>La Constancia de Inscripción en la Iniciativa de Seguridad Vial Organizacional emitida por la Dirección de Seguridad Vial del Ministerio de Transportes y Comunicaciones.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon"><i class="fa-solid fa-key"></i></div>
+                            <div>
+                                <h4>Credenciales de Acceso</h4>
+                                <p>Acceso a la Plataforma Tecnológica de Seguridad Vial Organizacional para seguimiento y desarrollo de acciones.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon"><i class="fa-solid fa-bus-simple"></i></div>
+                            <div>
+                                <h4>Requisito para promover la Profesionalización de Conductores</h4>
+                                <p>La inscripción en la ISVO permite cumplir uno de los requisitos solicitados para inscribirse en el Registro de Empresas de Transporte del Programa de Entrenamiento en la Conducción, en el marco del Decreto Supremo N° 003-2026-MTC.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <div class="hero-image-slide">
+                        <img src="image/charla%20isvo.png" alt="Charla organizacional sobre prevención y seguridad vial">
+                    </div>
+                </div>
+                <button type="button" class="carousel-control carousel-prev" aria-label="Vista anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                <button type="button" class="carousel-control carousel-next" aria-label="Vista siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+                <div class="carousel-dots" aria-label="Seleccionar vista">
+                    <button type="button" class="carousel-dot active" data-slide="0" aria-label="Ver información ISVO"></button>
+                    <button type="button" class="carousel-dot" data-slide="1" aria-label="Ver charla de seguridad vial"></button>
+                </div>
+            </div>
+
+            <!-- Seguridad Vial Organizacional -->
+            <section class="stats-section svo-section">
+                <h2 class="section-title">¿Qué es la Seguridad Vial Organizacional?</h2>
+                <p class="svo-intro">Es el conjunto sistemático de políticas, procedimientos, mecanismos de control y acciones preventivas que implementan las organizaciones públicas y privadas para identificar, evaluar, gestionar y mitigar los riesgos de siniestros de tránsito asociados a sus actividades.</p>
+                <div class="svo-grid">
+                    <article class="svo-card">
+                        <div class="svo-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Gestión estratégica</h3>
+                        <p>Reduce la exposición al riesgo de trabajadores, proveedores, usuarios y terceros que interactúan con el sistema vial durante las actividades laborales.</p>
+                    </article>
+                    <article class="svo-card">
+                        <div class="svo-icon"><i class="fa-solid fa-people-group"></i></div>
+                        <h3>Corresponsabilidad</h3>
+                        <p>Se basa en el enfoque de Sistema Seguro: prevenir muertes y lesiones graves requiere la participación activa de todos los actores, incluido el sector empresarial e institucional.</p>
+                    </article>
+                    <article class="svo-card">
+                        <div class="svo-icon"><i class="fa-solid fa-route"></i></div>
+                        <h3>Movilidad laboral integral</h3>
+                        <p>No se limita a conducir vehículos de la organización; comprende todo el ciclo de movilidad relacionado con el trabajo.</p>
+                    </article>
+                </div>
+                <div class="svo-mobility">
+                    <h3>¿Qué comprende?</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i><span>Movilidad desde y hacia el hogar con fines laborales.</span></li>
+                        <li><i class="fa-solid fa-briefcase"></i><span>Movilidad durante la jornada de trabajo.</span></li>
+                        <li><i class="fa-solid fa-road"></i><span>Interacción con el entorno vial inmediato de la organización.</span></li>
+                        <li><i class="fa-solid fa-truck"></i><span>Gestión de flotas y contratación de servicios de transporte.</span></li>
+                        <li><i class="fa-solid fa-clipboard-check"></i><span>Regulación interna del comportamiento vial del personal.</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Quick Path Section -->
+            <section class="quick-path">
+                <h2 class="section-title">El Proceso de un Vistazo</h2>
+                <div class="path-steps">
+                    <div class="path-step" data-step="1">
+                        <div class="path-step-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
+                        <h3>Paso 1: Descarga</h3>
+                        <p>Obtenga el formato oficial ISVO.</p>
+                    </div>
+                    <div class="path-step" data-step="2">
+                        <div class="path-step-icon"><i class="fa-solid fa-file-signature"></i></div>
+                        <h3>Paso 2: Firma</h3>
+                        <p>Complete y firme con el representante legal.</p>
+                    </div>
+                    <div class="path-step" data-step="3">
+                        <div class="path-step-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                        <h3>Paso 3: Envío</h3>
+                        <p>Presente la solicitud a la MPV del MTC.</p>
+                    </div>
+                    <div class="path-step" data-step="4">
+                        <div class="path-step-icon"><i class="fa-solid fa-id-card"></i></div>
+                        <h3>Paso 4: Validación</h3>
+                        <p>Reciba su constancia o subsane observaciones.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- TAB: GUIA (WIZARD) -->
+        <section id="tab-guia" class="tab-pane">
+            <div class="container">
+                <div class="text-center section-header">
+                    <h2>Guía del Trámite de Inscripción</h2>
+                    <p>Siga detalladamente las instrucciones oficiales para registrar su organización.</p>
+                </div>
+
+                <!-- Wizard Progress Indicator -->
+                <div class="wizard-steps-indicator">
+                    <div class="wizard-progress-bar">
+                        <div id="wizard-progress" class="wizard-progress-fill" style="width: 0%;"></div>
+                    </div>
+                    <button class="step-indicator-btn active" data-step-target="1">
+                        <span class="step-num">1</span>
+                        <span class="step-title">Descargar Formato</span>
+                    </button>
+                    <button class="step-indicator-btn" data-step-target="2">
+                        <span class="step-num">2</span>
+                        <span class="step-title">Completar y Firmar</span>
+                    </button>
+                    <button class="step-indicator-btn" data-step-target="3">
+                        <span class="step-num">3</span>
+                        <span class="step-title">Presentar Solicitud</span>
+                    </button>
+                    <button class="step-indicator-btn" data-step-target="4">
+                        <span class="step-num">4</span>
+                        <span class="step-title">Validación de Datos</span>
+                    </button>
+                </div>
+
+                <!-- Wizard Content Area -->
+                <div class="wizard-container">
+                    <!-- Step 1 Content -->
+                    <div class="wizard-step-content active" data-step-content="1">
+                        <div class="wizard-card-grid">
+                            <div class="wizard-card-text">
+                                <span class="step-badge">Paso 1</span>
+                                <h3>Descargar el Formato de Inscripción ISVO</h3>
+                                <p>Descargue el documento denominado <strong>"Formato de Inscripción en la Iniciativa de Seguridad Vial Organizacional"</strong>.</p>
+                                <div class="regulatory-highlight">
+                                    <div class="regulatory-highlight-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                                    <div>
+                                        <strong>Formato oficial</strong>
+                                        <p>Aprobado mediante la <strong>Resolución Directoral N° 002-2026-MTC/18</strong>, en cumplimiento de lo dispuesto en la Segunda Disposición Complementaria Final del <strong>Decreto Supremo N° 003-2026-MTC</strong>.</p>
+                                    </div>
+                                </div>
+                                <div class="action-box">
+                                    <h4 class="action-box-title"><i class="fa-solid fa-download"></i> Descarga Oficial:</h4>
+                                    <div class="download-links-flex">
+                                        <a href="https://docs.google.com/document/d/1B9ztqCoI5_vTBwErCX3kray9JbDyLy6O/edit" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-brands fa-google-drive"></i> Descargar Formato de Inscripción ISVO <i class="fa-solid fa-up-right-from-square icon-small"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wizard-card-visual">
+                                <figure class="isvo-format-preview">
+                                    <img src="image/formato%20isvo.png" alt="Vista previa del Formato de Inscripción ISVO">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 Content -->
+                    <div class="wizard-step-content" data-step-content="2">
+                        <div class="wizard-card-grid">
+                            <div class="wizard-card-text">
+                                <span class="step-badge">Paso 2</span>
+                                <h3>Completar y firmar el Formato</h3>
+                                <p>Complete toda la información solicitada en el formato descargado del <strong>PASO 1</strong>, verificando exhaustivamente que los datos consignados sean correctos y estén debidamente actualizados.</p>
+                                <div class="alert alert-info">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <div>
+                                        <strong>Firma Obligatoria:</strong> Una vez completado, el documento deberá ser firmado de manera física o digital por el <strong>representante legal</strong> de la organización.
+                                    </div>
+                                </div>
+                                <div class="format-help-box">
+                                    <div class="format-help-content">
+                                        <i class="fa-solid fa-headset"></i>
+                                        <div>
+                                            <strong>¿Tiene dudas o consultas?</strong>
+                                            <p>Reciba orientación sobre el llenado del Formato.</p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-outline btn-sm" data-action="go-to-ayuda">
+                                        Ir al Centro de Consultas <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="wizard-card-visual">
+                                <div class="visual-box-decoration sign-mockup">
+                                    <i class="fa-solid fa-file-signature visual-main-icon text-warning"></i>
+                                    <div class="signature-line">
+                                        <span class="sig-path">Firma del Representante Legal</span>
+                                    </div>
+                                </div>
+                                <p class="optional-simulator-note"><strong>Uso opcional:</strong> Puede utilizar el simulador para facilitar el llenado del Formato de Inscripción ISVO.</p>
+                                <button type="button" class="btn btn-sm btn-simulator step-format-button" data-action="go-to-format-simulator"><i class="fa-solid fa-file-pen"></i> Usar Simulador Formato Inscripción ISVO</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 Content -->
+                    <div class="wizard-step-content" data-step-content="3">
+                        <div class="wizard-card-grid">
+                            <div class="wizard-card-text">
+                                <span class="step-badge">Paso 3</span>
+                                <h3>Presentar solicitud</h3>
+                                <p>La organización deberá presentar una solicitud y el Formato de Inscripción ISVO a través de la <strong>Mesa de Partes Virtual del Ministerio de Transportes y Comunicaciones (MTC)</strong>.</p>
+                                
+                                <div class="documents-to-submit">
+                                    <h4><i class="fa-solid fa-folder-open"></i> Documentos obligatorios a adjuntar:</h4>
+                                    <div class="submit-doc-item">
+                                        <i class="fa-solid fa-check text-success"></i>
+                                        <span><strong>SOLICITUD</strong> dirigida a la Dirección de Seguridad Vial (en formato PDF).</span>
+                                    </div>
+                                    <div class="submit-doc-item">
+                                        <i class="fa-solid fa-check text-success"></i>
+                                        <span><strong>FORMATO DE INSCRIPCIÓN</strong> debidamente completado y firmado por el representante legal (en formato PDF).</span>
+                                    </div>
+                                </div>
+
+                                <div class="action-box">
+                                    <h4 class="action-box-title"><i class="fa-solid fa-download"></i> Uso Opcional:</h4>
+                                    <p class="optional-request-note">Puede utilizar el modelo de solicitud proporcionado por el MTC, completar la solicitud mediante el simulador o elaborar su propio documento.</p>
+                                    <div class="download-links-flex">
+                                        <a href="https://docs.google.com/document/d/1DsikKy87VD_l331va8ADpqrlMomsQhvM/edit" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-google-drive"></i> Descargar el Modelo de Solicitud del MTC <i class="fa-solid fa-up-right-from-square icon-small"></i></a>
+                                        <button type="button" class="btn btn-simulator" data-action="go-to-simulador"><i class="fa-solid fa-laptop-code"></i> Usar el Simulador de Solicitud <i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wizard-card-visual">
+                                <div class="visual-box-decoration upload-mockup">
+                                    <i class="fa-solid fa-cloud-arrow-up visual-main-icon text-accent"></i>
+                                    <span class="upload-label">Mesa de Partes Virtual — MTC</span>
+                                    <div class="progress-bar-small"><div class="progress-bar-small-fill"></div></div>
+                                </div>
+                                <a href="https://mpv.mtc.gob.pe/" target="_blank" rel="noopener" class="btn btn-primary mpv-button"><i class="fa-solid fa-globe"></i> Mesa de Partes Virtual del MTC <i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 Content -->
+                    <div class="wizard-step-content" data-step-content="4">
+                        <div class="wizard-card-grid">
+                            <div class="wizard-card-text">
+                                <span class="step-badge">Paso 4</span>
+                                <h3>Validación de la información</h3>
+                                <p>La <strong>Dirección de Seguridad Vial</strong> revisará y validará la información presentada por su organización.</p>
+                                
+                                <div class="outcome-box conforme">
+                                    <div class="outcome-header">
+                                        <i class="fa-solid fa-circle-check text-success"></i>
+                                        <h4>Si la información es conforme, recibirá:</h4>
+                                    </div>
+                                    <ul>
+                                        <li>La <strong>Constancia de Inscripción</strong> en la Iniciativa de Seguridad Vial Organizacional.</li>
+                                        <li>Las <strong>credenciales de acceso</strong> a la Plataforma Tecnológica de Seguridad Vial Organizacional para el desarrollo de acciones de seguridad vial.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="outcome-box observaciones">
+                                    <div class="outcome-header">
+                                        <i class="fa-solid fa-circle-exclamation text-warning"></i>
+                                        <h4>Si se identifican observaciones:</h4>
+                                    </div>
+                                    <p>La Dirección de Seguridad Vial comunicará las observaciones encontradas al <strong>correo electrónico registrado</strong> por la organización para que estas puedan ser subsanadas.</p>
+                                </div>
+                            </div>
+                            <div class="wizard-card-visual">
+                                <div class="visual-box-decoration cert-mockup">
+                                    <i class="fa-solid fa-award visual-main-icon text-success"></i>
+                                    <h4 class="cert-title">CONSTANCIA ISVO</h4>
+                                    <span class="cert-desc">MTC - APROBADO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Final Guide Message -->
+                    <div class="wizard-step-content wizard-completion" data-step-content="5">
+                        <div class="completion-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                        <span class="step-badge">Compromiso con la Seguridad Vial Organizacional</span>
+                        <h3>Gracias por ser parte de esta iniciativa</h3>
+                        <p>Al formar parte de la Iniciativa de Seguridad Vial Organizacional del Ministerio de Transportes y Comunicaciones, su organización fortalece una cultura de movilidad segura y responsable.</p>
+                        <p>Este compromiso impulsa la adopción de medidas técnicas, preventivas y de gestión para identificar y reducir la exposición a riesgos viales de trabajadores, proveedores, usuarios y terceros.</p>
+                        <div class="completion-values">
+                            <span><i class="fa-solid fa-handshake"></i> Compromiso</span>
+                            <span><i class="fa-solid fa-shield-halved"></i> Prevención</span>
+                            <span><i class="fa-solid fa-people-group"></i> Corresponsabilidad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wizard Actions -->
+                <div class="wizard-actions-bar">
+                    <button id="wizard-prev" class="btn btn-secondary" disabled><i class="fa-solid fa-arrow-left"></i> Anterior</button>
+                    <button id="wizard-next" class="btn btn-primary">Siguiente <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB: SIMULADOR -->
+        <section id="tab-simulador" class="tab-pane">
+            <div class="container">
+                <div class="text-center section-header">
+                    <h2>Simulador de Solicitud</h2>
+                    <p>Complete sus datos aquí para ver cómo se estructuraría su solicitud formal.</p>
+                </div>
+
+                <div class="simulator-layout">
+                    <!-- Form Side -->
+                    <div class="simulator-form-container card">
+                        <h3><i class="fa-solid fa-pen-to-square"></i> Formulario de Simulación</h3>
+                        <form id="isvo-sim-form" onsubmit="return false;">
+                            <div class="form-group">
+                                <label for="sim-rep">Representante Legal</label>
+                                <input type="text" id="sim-rep" class="form-control" placeholder="Ej. Juan Luis Pérez Gómez" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sim-dni">DNI del Representante Legal</label>
+                                <input type="text" id="sim-dni" class="form-control" maxlength="8" inputmode="numeric" pattern="[0-9]{8}" placeholder="Ej. 12345678" required>
+                                <span class="input-hint">Debe contener 8 dígitos.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="sim-ruc">RUC de la Organización</label>
+                                <input type="text" id="sim-ruc" class="form-control" maxlength="11" inputmode="numeric" pattern="[0-9]{11}" placeholder="Ej. 20123456789" required>
+                                <span class="input-hint">Debe contener 11 dígitos.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="sim-name">Razón Social</label>
+                                <input type="text" id="sim-name" class="form-control" placeholder="Ej. Transportes Seguros S.A.C." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sim-address">Dirección Legal</label>
+                                <input type="text" id="sim-address" class="form-control" placeholder="Ej. Av. Nicolás de Piérola 123, Lima" required>
+                            </div>
+                            <div class="form-row form-row-three">
+                                <div class="form-group">
+                                    <label for="sim-district">Distrito</label>
+                                    <input type="text" id="sim-district" class="form-control" placeholder="Ej. Cercado de Lima" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sim-prov">Provincia</label>
+                                    <input type="text" id="sim-prov" class="form-control" placeholder="Ej. Lima" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sim-department">Departamento</label>
+                                    <input type="text" id="sim-department" class="form-control" placeholder="Ej. Lima" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="sim-email">Correo Electrónico</label>
+                                    <input type="email" id="sim-email" class="form-control" placeholder="Ej. contacto@empresa.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sim-phone">Celular</label>
+                                    <input type="tel" id="sim-phone" class="form-control" inputmode="numeric" maxlength="9" pattern="[0-9]{9}" placeholder="Ej. 987654321" required>
+                                </div>
+                            </div>
+                            <p class="sim-signature-note"><strong>Puede seleccionar una imagen de su firma para incluirla en la solicitud o imprimir y guardar el documento sin seleccionarla para firmarlo posteriormente de manera física.</strong></p>
+                            <div class="btn-group-full">
+                                <button type="button" id="btn-autofill" class="btn btn-outline"><i class="fa-solid fa-wand-magic-sparkles"></i> Autocompletar Demo</button>
+                                <button type="button" id="btn-clear-sim" class="btn btn-outline"><i class="fa-solid fa-eraser"></i> Limpiar</button>
+                                <button type="button" id="btn-submit-sim" class="btn btn-primary sim-signature-button"><i class="fa-solid fa-signature"></i> Agregar imagen de firma</button>
+                                <input type="file" id="signature-image-input" accept="image/png,image/jpeg,image/webp" hidden>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Preview Side -->
+                    <div class="simulator-preview-container">
+                        <div class="preview-sticky">
+                            <h3><i class="fa-solid fa-eye"></i> Vista Previa de la Solicitud</h3>
+                            <div class="document-preview card" id="rendered-doc">
+                                <div class="preview-header">
+                                    <span class="preview-doc-title">SOLICITUD DE INSCRIPCIÓN ISVO</span>
+                                </div>
+                                <div class="preview-body">
+                                    <p class="preview-date-line"><span class="preview-text text-department" data-placeholder="[Departamento]"></span>, <span id="preview-current-date"></span></p>
+                                
+                                    <p class="request-recipient">Señor:<br>
+                                    <strong>PEDRO OLIVARES MUÑOZ</strong><br>
+                                    Director de la Dirección de Seguridad Vial<br>
+                                    Ministerio de Transportes y Comunicaciones<br>
+                                    Jr. Zorritos Nro. 1203 CP. 15082 - Perú</p>
+                                    <br>
+                                    <p class="request-subject"><strong>ASUNTO:</strong> Inscripción en la Iniciativa de Seguridad Vial Organizacional (ISVO)</p>
+                                    <br>
+                                    <p>Por la presente, yo, <span class="preview-text text-rep" data-placeholder="[Representante Legal]"></span>, identificado con DNI N° <span class="preview-text text-dni" data-placeholder="[DNI]"></span>, en calidad de representante legal de la empresa con RUC N° <span class="preview-text text-ruc" data-placeholder="[RUC]"></span>, denominada <span class="preview-text text-name" data-placeholder="[Razón Social]"></span> y con domicilio legal en <span class="preview-text text-address" data-placeholder="[Dirección Legal]"></span>, distrito de <span class="preview-text text-district" data-placeholder="[Distrito]"></span>, provincia de <span class="preview-text text-prov" data-placeholder="[Provincia]"></span>, departamento de <span class="preview-text text-department" data-placeholder="[Departamento]"></span>, ante usted me presento y expongo:</p>
+                                    
+                                    <p>Que, mediante la presente, solicito la inscripción de mi representada en la <strong>Iniciativa de Seguridad Vial Organizacional</strong>, para lo cual adjunto el formato de inscripción debidamente llenado y firmado.</p>
+                                    
+                                    <p>Para notificaciones declaramos el correo: <span class="preview-text text-email" data-placeholder="[Correo]"></span> y celular <span class="preview-text text-phone" data-placeholder="[Celular]"></span>.</p>
+                                    
+                                    <p>Por lo expuesto, solicito se sirva atender la presente solicitud.</p>
+                                    <p>Atentamente,</p>
+                                    <br>
+
+                                    <div class="preview-footer">
+                                        <div class="preview-signature">
+                                            <div class="signature-box-rendered">
+                                                <span class="sig-placeholder">Firma del Representante</span>
+                                            </div>
+                                            <p><strong class="preview-text text-rep" data-placeholder="[Nombre del Representante]"></strong></p>
+                                            <p>DNI N° <strong class="preview-text text-dni" data-placeholder="[DNI]"></strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preview-actions">
+                                <button id="btn-print-preview" class="btn btn-outline btn-block"><i class="fa-solid fa-print"></i> Imprimir / Guardar PDF</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="simulator-privacy-notice"><i class="fa-solid fa-shield-halved"></i><p><strong>Aviso de privacidad:</strong> La información ingresada en este simulador se procesa únicamente en su navegador con fines de orientación. No es almacenada ni enviada a servidores del Ministerio de Transportes y Comunicaciones.</p></div>
+            </div>
+        </section>
+
+        <!-- TAB: CHECKLIST -->
+        <section id="tab-checklist" class="tab-pane">
+            <div class="container">
+                <div class="text-center section-header">
+                    <h2>Simulador del Formato de Inscripción ISVO</h2>
+                    <p>Complete los campos y descargue una copia editable del mismo Word oficial, con la información colocada en sus tablas.</p>
+                </div>
+                <form id="isvo-format-form" class="official-format card" onsubmit="return false;">
+                    <div class="format-heading">
+                        <span>ANEXO</span>
+                        <h3>FORMATO DE INSCRIPCIÓN EN LA INICIATIVA DE SEGURIDAD VIAL ORGANIZACIONAL</h3>
+                    </div>
+
+                    <fieldset class="format-section">
+                        <legend>I. DATOS GENERALES DE LA ORGANIZACIÓN SOLICITANTE</legend>
+                        <p class="format-help">Complete todos los campos de información.</p>
+                        <div class="format-subgroup">
+                            <h4><i class="fa-solid fa-building"></i> Datos de la organización</h4>
+                            <div class="format-fields-grid">
+                                <label class="field-three">Razón Social<input id="fmt-company" type="text" required></label>
+                                <label>RUC<input id="fmt-ruc" type="text" inputmode="numeric" maxlength="11" required></label>
+                            </div>
+                        </div>
+
+                        <div class="format-subgroup">
+                            <h4><i class="fa-solid fa-user-tie"></i> Datos del Representante Legal</h4>
+                            <div class="format-fields-grid">
+                                <label class="field-wide">Nombres y apellidos<input id="fmt-legal-name" type="text" required></label>
+                                <label>Tipo de documento<select id="fmt-legal-type" required><option value="DNI">DNI</option><option value="CE">CE</option></select></label>
+                                <label>N.° de documento<input id="fmt-legal-doc" type="text" maxlength="12" required></label>
+                                <label class="field-wide">Correo electrónico<input id="fmt-legal-email" type="email" required></label>
+                                <label class="field-wide">Celular<input id="fmt-legal-phone" type="tel" inputmode="numeric" maxlength="9" required></label>
+                            </div>
+                        </div>
+
+                        <div class="format-subgroup">
+                            <h4><i class="fa-solid fa-user-check"></i> Datos del Responsable del Reporte</h4>
+                            <div class="format-fields-grid">
+                                <label class="field-wide">Nombres y apellidos<input id="fmt-report-name" type="text" required></label>
+                                <label>Tipo de documento<select id="fmt-report-type" required><option value="DNI">DNI</option><option value="CE">CE</option></select></label>
+                                <label>N.° de documento<input id="fmt-report-doc" type="text" maxlength="12" required></label>
+                                <label class="field-wide">Correo electrónico<input id="fmt-report-email" type="email" required></label>
+                                <label class="field-wide">Celular<input id="fmt-report-phone" type="tel" inputmode="numeric" maxlength="9" required></label>
+                            </div>
+                            <p id="report-person-warning" class="format-warning hidden"><i class="fa-solid fa-triangle-exclamation"></i> El Responsable del Reporte debe ser una persona distinta al Representante Legal.</p>
+                        </div>
+
+                        <div class="format-subgroup">
+                            <h4><i class="fa-solid fa-location-dot"></i> Actividad y ubicación de la organización</h4>
+                            <div class="format-fields-grid">
+                                <label>Sector<input id="fmt-sector" type="text" required></label>
+                                <label class="field-three">Dirección Fiscal<input id="fmt-address" type="text" required></label>
+                                <label>Distrito<input id="fmt-district" type="text" required></label>
+                                <label>Provincia<input id="fmt-province" type="text" required></label>
+                                <label>Departamento<input id="fmt-department" type="text" required></label>
+                                <label>Geolocalización (Latitud, Longitud)<input id="fmt-location" type="text" placeholder="Ej. -12.048926, -77.055923" required></label>
+                            </div>
+                            <p class="format-location-note"><i class="fa-solid fa-location-crosshairs"></i> Registre la geolocalización del lugar donde la organización realiza o inicia sus actividades u operaciones. Las coordenadas deben corresponder con el departamento, la provincia y el distrito consignados.</p>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="format-section">
+                        <legend>II. PLAN DE ACCIÓN</legend>
+                        <p class="format-help">Seleccione las actividades que cumplirá e indique el número de beneficiarios (internos o externos a la organización).</p>
+                        <div class="format-table-wrap">
+                            <table class="format-action-table">
+                                <thead><tr><th>Lineamiento</th><th>Actividad</th><th>Selección</th><th>N.° beneficiarios</th></tr></thead>
+                                <tbody>
+                                    <tr><th rowspan="2">Movilidad desde y hacia el domicilio</th><td>Elaboración de planes de movilidad corporativa sostenible y segura.</td><td><input class="activity-check" type="checkbox"></td><td><input class="beneficiary-input" type="number" min="0" disabled></td></tr>
+                                    <tr><td>Desarrollo de talleres participativos con trabajadores para seleccionar alternativas de movilidad más seguras.</td><td><input class="activity-check" type="checkbox"></td><td><input class="beneficiary-input" type="number" min="0" disabled></td></tr>
+                                    <tr><th rowspan="5">Durante las actividades laborales</th><td>Elaboración de diagnóstico de riesgos viales en los procesos logísticos y de transporte.</td><td><input class="activity-check" type="checkbox"></td><td><input class="beneficiary-input" type="number" min="0" disabled></td></tr>
+                                    <tr><td>Capacitación en conducción segura y defensiva, manejo de fatiga y estrés.</td><td><input class="activity-check" type="checkbox"></td><td><input class="beneficiary-input" type="number" min="0" disabled></td></tr>
+                                    <tr><td>Establecimiento de estándares mínimos de seguridad vial en el entorno laboral o cadena de suministro.</td><td><input class="activity-check" type="checkbox"></td><td><input class="beneficiary-input" type="number" min="0" disabled></td></tr>
+                                    <tr><td>Desarrollo e implementación de protocolos de atención de emergencias por siniestros viales.</td><td><input class="activity-check" type="checkbox"></td><td><input class="beneficiary-input" type="number" min="0" disabled></td></tr>
+                                    <tr><td>Implementación de zonas seguras para movilidad de peatones en los entornos de trabajo.</td><td><input class="activity-check" type="checkbox"></td><td><input class="beneficiary-input" type="number" min="0" disabled></td></tr>
+                                    <tr><th rowspan="4">Seguridad vial hacia la comunidad</th><td>Desarrollo de campañas de seguridad vial en redes sociales y medios de comunicación.</td><td><input class="activity-check" type="checkbox"></td><td><input class="beneficiary-input" type="number" min="0" disabled></td></tr>
+                                    <tr><td>Talleres de sensibilización para proveedores, clientes y usuarios viales.</td><td><input class="activity-check" type="checkbox"></td><td><input class="beneficiary-input" type="number" min="0" disabled></td></tr>
+                                    <tr><td>Alianzas con municipios para incorporar el enfoque de seguridad vial y desarrollar acciones de educación vial.</td><td><input class="activity-check" type="checkbox"></td><td><input class="beneficiary-input" type="number" min="0" disabled></td></tr>
+                                    <tr><td>Participación en mejoras de entornos escolares, hospitales, puntos críticos, zonas industriales y similares.</td><td><input class="activity-check" type="checkbox"></td><td><input class="beneficiary-input" type="number" min="0" disabled></td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="format-section declaration-section">
+                        <legend>III. DECLARACIÓN DE COMPROMISO</legend>
+                        <p>Yo, <strong id="declaration-name">[Representante Legal]</strong>, con Documento de Identidad <strong id="declaration-doc">[Documento]</strong>, en representación de <strong id="declaration-company">[Organización]</strong>, declaro que la información consignada es veraz y me comprometo a cumplir las actividades seleccionadas y reportar su cumplimiento en la plataforma tecnológica de la Dirección de Seguridad Vial del Ministerio de Transportes y Comunicaciones.</p>
+                        <p>Asimismo, autorizo al Ministerio de Transportes y Comunicaciones a utilizar los datos consignados únicamente para las comunicaciones y gestiones vinculadas a la inscripción y seguimiento de la iniciativa, conforme a la normativa vigente sobre protección de datos personales.</p>
+                        <div class="format-signature-box" id="format-signature-box"><span>Firma del Representante Legal</span></div>
+                        <p class="format-help text-center"><strong>Puede seleccionar una imagen de su firma para incluirla en el Word o descargar el documento sin seleccionarla y firmarlo posteriormente de manera física.</strong></p>
+                        <input id="format-signature-input" type="file" accept="image/png,image/jpeg,image/webp" hidden>
+                    </fieldset>
+
+                    <div class="format-actions">
+                        <button type="button" id="format-demo" class="btn btn-outline"><i class="fa-solid fa-wand-magic-sparkles"></i> Autocompletar Demo</button>
+                        <button type="button" id="format-signature-button" class="btn btn-outline"><i class="fa-solid fa-signature"></i> Agregar imagen de firma</button>
+                        <button type="button" id="format-clear" class="btn btn-outline"><i class="fa-solid fa-eraser"></i> Limpiar</button>
+                        <button type="button" id="format-download-word" class="btn btn-primary"><i class="fa-solid fa-file-word"></i> Descargar Word Oficial Llenado</button>
+                        <input type="file" id="format-word-template" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden>
+                    </div>
+                </form>
+                <div class="simulator-privacy-notice"><i class="fa-solid fa-shield-halved"></i><p><strong>Aviso de privacidad:</strong> La información ingresada en este simulador se procesa únicamente en su navegador con fines de orientación. No es almacenada ni enviada a servidores del Ministerio de Transportes y Comunicaciones.</p></div>
+            </div>
+        </section>
+
+        <!-- TAB: RECURSOS -->
+        <section id="tab-recursos" class="tab-pane">
+            <div class="container">
+                <div class="text-center section-header">
+                    <h2>Recursos para el Trámite</h2>
+                    <p>Acceda al formato oficial, prepare su solicitud y formato de inscripción para presentarla mediante la Mesa de Partes Virtual.</p>
+                </div>
+
+                <div class="resources-grid">
+                    <!-- Card 1: Formatos de Inscripción -->
+                    <div class="resource-card card">
+                        <div class="resource-icon word"><i class="fa-solid fa-file-invoice"></i></div>
+                        <h3>Formato de Inscripción ISVO</h3>
+                        <p>Formato de Inscripción en la Iniciativa de Seguridad Vial Organizacional, requerido en el Paso 1.</p>
+                        <div class="resource-downloads">
+                            <a href="https://docs.google.com/document/d/1B9ztqCoI5_vTBwErCX3kray9JbDyLy6O/edit" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-up-right-from-square"></i> Abrir Formato Oficial</a>
+                        </div>
+                        <div class="resource-optional-note"><strong>Uso opcional:</strong> Puede utilizar el simulador para facilitar el llenado del Formato de Inscripción ISVO.</div>
+                        <div class="resource-downloads">
+                            <button type="button" class="btn btn-sm btn-simulator" data-action="go-to-format-simulator"><i class="fa-solid fa-file-pen"></i> Simulador Formato Inscripción ISVO</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Solicitudes Mesa de Partes -->
+                    <div class="resource-card card">
+                        <div class="resource-icon request"><i class="fa-solid fa-envelope-open-text"></i></div>
+                        <h3>Solicitud</h3>
+                        <p>Solicitud de inscripción dirigida a la Dirección de Seguridad Vial para presentar formalmente sus documentos.</p>
+                        <div class="resource-optional-note"><strong>Uso opcional:</strong> Puede abrir el modelo del MTC, usar el simulador o elaborar su propia solicitud.</div>
+                        <div class="resource-downloads">
+                            <a href="https://docs.google.com/document/d/1DsikKy87VD_l331va8ADpqrlMomsQhvM/edit" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-up-right-from-square"></i> Abrir Modelo del MTC</a>
+                            <button type="button" class="btn btn-sm btn-simulator" data-action="go-to-simulador"><i class="fa-solid fa-laptop-code"></i> Usar Simulador de Solicitud</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Mesa de Partes Virtual -->
+                    <div class="resource-card card">
+                        <div class="resource-icon mpv"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                        <h3>Mesa de Partes Virtual del MTC</h3>
+                        <p>Presente la solicitud y el Formato de Inscripción ISVO completado y firmado a través del canal oficial del MTC.</p>
+                        <div class="resource-downloads">
+                            <a href="https://mpv.mtc.gob.pe/" target="_blank" rel="noopener" class="btn btn-sm btn-primary"><i class="fa-solid fa-globe"></i> Ir a la Mesa de Partes Virtual</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB: AYUDA / CONSULTAS -->
+        <section id="tab-ayuda" class="tab-pane">
+            <div class="container">
+                <div class="text-center section-header">
+                    <h2>Centro de Consultas</h2>
+                    <p>Comuníquese de manera oficial ante dudas del proceso de inscripción.</p>
+                </div>
+
+                <div class="ayuda-layout">
+                    <!-- FAQ Side -->
+                    <div class="faq-container">
+                        <div class="faq-list">
+                            <div class="faq-item active">
+                                <button class="faq-question">
+                                    <span>¿Quién debe firmar el formato de inscripción?</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>El documento deberá ser firmado obligatoriamente por el <strong>representante legal</strong> de la organización (Paso 2).</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿El Representante Legal y el Responsable del Reporte pueden ser la misma persona?</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p><strong>No.</strong> El <strong>Responsable del Reporte</strong> debe ser una persona distinta al <strong>Representante Legal</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿Qué hago si mi DNI o RUC presenta inconsistencias?</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Verifique que el <strong>número de DNI</strong> corresponda a la persona registrada y que el <strong>RUC</strong> coincida con la información oficial de la organización.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿La dirección fiscal debe coincidir con la registrada en SUNAT?</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p><strong>Sí.</strong> La <strong>dirección fiscal</strong> consignada debe coincidir con la registrada en la consulta RUC de SUNAT.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿Cómo debo registrar la geolocalización de mi empresa?</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Debe consignar las coordenadas geográficas en formato Latitud y Longitud, por ejemplo: <strong>-12.048926, -77.055923</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿Cómo obtengo las coordenadas de mi Organización?</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Busque la dirección en <strong>Google Maps</strong>, haga <strong>clic derecho</strong> sobre el punto exacto donde está ubicada la organización y copie los números que aparecen en pantalla.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿Qué debo consignar en el campo “Sector”?</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Debe indicar el sector o rubro al que pertenece la empresa, por ejemplo: <strong>transporte de mercancías, transporte de pasajeros, transporte urbano, entre otros.</strong></p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿Es obligatorio consignar la página web de la empresa?</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p><strong>No.</strong> Este dato es opcional; sin embargo, <strong>se recomienda</strong> consignarlo si la empresa cuenta con una página web oficial.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿Qué documentos se presentan a la Mesa de Partes Virtual?</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Se presentan: la <strong>Solicitud</strong> (dirigida a la Dirección de Seguridad Vial) y el <strong>Formato de Inscripción ISVO</strong> completado y firmado por el representante legal (Paso 3).</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿Qué sucede si hay observaciones?</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>La Dirección de Seguridad Vial las comunicará al correo electrónico registrado. Las observaciones pueden ser subsanadas enviando las correcciones a <a href="mailto:organizacionsegura@mtc.gob.pe">organizacionsegura@mtc.gob.pe</a> (Paso 4).</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>¿Qué recibe la organización si todo es conforme?</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Recibirá la <strong>Constancia de Inscripción en la Iniciativa de Seguridad Vial Organizacional</strong> y las <strong>credenciales de acceso</strong> a la Plataforma Tecnológica de Seguridad Vial Organizacional (Paso 4).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact/Support Side -->
+                    <div class="support-container card">
+                        <h3><i class="fa-solid fa-headset"></i> Contacto y Consultas</h3>
+                        <p class="support-intro">Para consultas relacionadas con el proceso de inscripción, comuníquese a los canales oficiales:</p>
+                        
+                        <div class="contact-methods">
+                            <a href="tel:016157800" class="contact-method-card">
+                                <div class="contact-icon phone"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-text">
+                                    <strong>Teléfono</strong>
+                                    <span>(01) 615 7800 | Anexo: 6102</span>
+                                    <small>Haga clic para llamar directamente</small>
+                                </div>
+                            </a>
+                            <a href="tel:+51905461611" class="contact-method-card">
+                                <div class="contact-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div class="contact-text">
+                                    <strong>Celular</strong>
+                                    <span>+51 905 461 611</span>
+                                    <small>Haga clic para llamar directamente</small>
+                                </div>
+                            </a>
+                            <a href="mailto:organizacionsegura@mtc.gob.pe" class="contact-method-card">
+                                <div class="contact-icon email"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-text">
+                                    <strong>Correo institucional</strong>
+                                    <span>organizacionsegura@mtc.gob.pe</span>
+                                    <small>Haga clic para enviar un correo directamente</small>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="contact-simulator-box">
+                            <h4><i class="fa-brands fa-whatsapp"></i> Enviar Mensaje por WhatsApp</h4>
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <input type="text" id="contact-ruc" class="form-control form-control-sm" maxlength="11" inputmode="numeric" pattern="[0-9]{11}" placeholder="RUC de la Empresa" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="contact-name" class="form-control form-control-sm" placeholder="Su Nombre / Empresa" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="contact-msg" class="form-control form-control-sm" rows="3" placeholder="Escriba su consulta..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-sm btn-block"><i class="fa-brands fa-whatsapp"></i> Enviar Consulta por WhatsApp</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-brand-title">Dirección de Seguridad Vial</h3>
+                <p class="footer-brand-name">Ministerio de Transportes y Comunicaciones</p>
+                <address class="footer-contact">
+                    <div class="footer-address-side">
+                        <p><i class="fa-solid fa-location-dot"></i><span><strong>Dirección:</strong> Jr. Zorritos 1203, Cercado de Lima</span></p>
+                        <p><i class="fa-solid fa-envelope"></i><span><strong>Correo:</strong> <a href="mailto:organizacionsegura@mtc.gob.pe">organizacionsegura@mtc.gob.pe</a></span></p>
+                    </div>
+                    <div class="footer-contact-side">
+                        <p><i class="fa-solid fa-phone"></i><span><strong>Teléfono:</strong> (01) 615 7800 <span class="contact-separator">|</span> <strong>Anexo:</strong> 6102</span></p>
+                        <p><i class="fa-solid fa-mobile-screen-button"></i><span><strong>Celular:</strong> +51 905 461 611</span></p>
+                    </div>
+                </address>
+                <p class="footer-sub text-muted">© 2026. Todos los derechos reservados</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces Oficiales</h4>
+                <ul>
+                    <li><a href="https://mpv.mtc.gob.pe/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Mesa de Partes Virtual — MTC</a></li>
+                    <li><a href="https://www.gob.pe/mtc" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Portal Gob.pe MTC</a></li>
+                    <li><a href="https://www.onsv.gob.pe/" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> Observatorio Nacional de Seguridad Vial</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div id="toast-notification" class="toast hidden">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <div class="toast-content">
+            <h4 class="toast-title">Notificación</h4>
+            <p class="toast-message">Mensaje completado con éxito.</p>
+        </div>
+    </div>
+
+    <!-- Confetti Canvas Container -->
+    <div id="confetti-container" class="confetti-container"></div>
+
+    <!-- ZIP processor for generating the completed official Word document -->
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
