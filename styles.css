@@ -438,25 +438,6 @@ body.dark-theme .nav-tab.active {
 }
 
 /* TAB: INICIO - HERO */
-.hero-carousel {
-    position: relative;
-    margin-bottom: 4rem;
-}
-
-.hero-slide {
-    display: none;
-}
-
-.hero-slide.active {
-    display: block;
-    animation: carouselFade 0.6s ease;
-}
-
-@keyframes carouselFade {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 .hero {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -468,79 +449,9 @@ body.dark-theme .nav-tab.active {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-premium);
     height: 560px;
-    margin-bottom: 0;
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
     position: relative;
     overflow: hidden;
-}
-
-.hero-image-slide {
-    height: 560px;
-    overflow: hidden;
-    background-color: var(--primary);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-premium);
-}
-
-.hero-image-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.carousel-control {
-    position: absolute;
-    top: auto;
-    bottom: 1rem;
-    z-index: 4;
-    width: 44px;
-    height: 44px;
-    border: 1px solid rgba(255, 255, 255, 0.55);
-    border-radius: 50%;
-    background-color: rgba(15, 32, 66, 0.78);
-    color: #ffffff;
-    cursor: pointer;
-    transform: none;
-    transition: var(--transition);
-}
-
-.carousel-control:hover {
-    background-color: var(--secondary);
-    color: var(--primary);
-}
-
-.carousel-prev {
-    left: 1rem;
-}
-
-.carousel-next {
-    right: 1rem;
-}
-
-.carousel-dots {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    z-index: 4;
-    display: flex;
-    gap: 0.55rem;
-    transform: translateX(-50%);
-}
-
-.carousel-dot {
-    width: 10px;
-    height: 10px;
-    padding: 0;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.35);
-    cursor: pointer;
-}
-
-.carousel-dot.active {
-    width: 26px;
-    border-radius: 999px;
-    background-color: var(--secondary);
 }
 
 body.dark-theme .hero {
@@ -2798,9 +2709,6 @@ body:has(#tab-checklist.active) .main-footer {
         grid-template-columns: 1fr;
         gap: 2rem;
         padding: 3rem 2rem;
-    }
-    .hero-image-slide {
-        height: 760px;
     }
     .simulator-layout {
         grid-template-columns: 1fr;

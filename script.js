@@ -10,58 +10,6 @@ window.addEventListener('pageshow', () => {
 document.addEventListener('DOMContentLoaded', () => {
 
     // ==========================================
-    // CARRUSEL PRINCIPAL
-    // ==========================================
-    const heroCarousel = document.querySelector('.hero-carousel');
-
-    if (heroCarousel) {
-        const slides = heroCarousel.querySelectorAll('.hero-slide');
-        const dots = heroCarousel.querySelectorAll('.carousel-dot');
-        const prevButton = heroCarousel.querySelector('.carousel-prev');
-        const nextButton = heroCarousel.querySelector('.carousel-next');
-        let currentSlide = 0;
-        let carouselTimer;
-
-        function showCarouselSlide(index) {
-            currentSlide = (index + slides.length) % slides.length;
-            slides.forEach((slide, slideIndex) => {
-                slide.classList.toggle('active', slideIndex === currentSlide);
-            });
-            dots.forEach((dot, dotIndex) => {
-                dot.classList.toggle('active', dotIndex === currentSlide);
-            });
-        }
-
-        function startCarousel() {
-            clearTimeout(carouselTimer);
-            const slideDuration = currentSlide === 1 ? 3000 : 7000;
-            carouselTimer = setTimeout(() => {
-                showCarouselSlide(currentSlide + 1);
-                startCarousel();
-            }, slideDuration);
-        }
-
-        prevButton.addEventListener('click', () => {
-            showCarouselSlide(currentSlide - 1);
-            startCarousel();
-        });
-
-        nextButton.addEventListener('click', () => {
-            showCarouselSlide(currentSlide + 1);
-            startCarousel();
-        });
-
-        dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                showCarouselSlide(Number(dot.dataset.slide));
-                startCarousel();
-            });
-        });
-
-        startCarousel();
-    }
-
-    // ==========================================
     // 2. NAVEGACIÓN POR PESTAÑAS (TAB SYSTEM)
     // ==========================================
     const navTabs = document.querySelectorAll('.nav-tab');
